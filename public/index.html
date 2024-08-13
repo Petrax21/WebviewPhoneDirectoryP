@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telefon Rehberi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="contact-form" id="contact-form">
+    <h1>Telefon Rehberi</h1>
+    <button id="addContactBtn">Ekle</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Telefon</th>
+                <th>Sil</th>
+            </tr>
+        </thead>
+        <tbody id="contact-list">
+            <!-- Kişiler burada görünecek -->
+        </tbody>
+    </table>
+</div>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <span class="closeBtn" id="closePopup">&times;</span>
+        <h2>Yeni Kişi Ekle</h2>
+        <label for="popup-first-name">Ad</label>
+        <input type="text" id="popup-first-name" placeholder="Ad" required>
+        <label for="popup-last-name">Soyad</label>
+        <input type="text" id="popup-last-name" placeholder="Soyad" required>
+        <label for="popup-phone">Telefon</label>
+        <input type="text" id="popup-phone" placeholder="Telefon" required>
+        <div class="button-container">
+            <button id="cancelBtn">İptal</button>
+            <button id="saveBtn">Kaydet</button>
+        </div>
+    </div>
+</div>
+w.navigate("file:///home/mustafa/Documents/webview-telefon-rehberi/public/index.html");
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+  "name" : "angular-webview",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "2b665df62f1ccc5dead7f1c93888bfe30a918363",
+  "dependencies" : [ {
+    "name" : "gtk",
+    "version>=" : "4.10.5#2"
+  } ]
+}
