@@ -1,5 +1,6 @@
 # MySQL-webview-telefon-rehberi
 
+
 [![Rehber](https://img.shields.io/badge/Site-37a779?style=for-the-badge)](https://telefon-rehberi.onrender.com)
 
 [![App Platorm](https://i.hizliresim.com/257ww8m.png)](https://www.digitalocean.com/products/app-platform)
@@ -43,4 +44,41 @@ A ---> C(ekrana yazıldı)
 B --> D{istek atıldı}
 D --> C
 C <--- A
+```
+
+# MySQL
+
+Gerekli paketler kurulur ardından root ile yeni bir kullanıcı açılır 
+
+```sql
+mysql -u root -p
+```
+  &
+  
+
+```sql
+CREATE USER 'KULLANICI ADI'@'%' IDENTIFIED BY 'ŞİFRE';
+```
+```sql
+grant all privileges on *.* to 'KULLANICI ADI'@'%' with grant option;
+```
+```sql
+mysql -u KULLANICI ADI-p
+```
+```sql
+CREATE DATABASE telefon_rehberi; //database adı
+USE telefon_rehberi; //database girme
+
+CREATE TABLE rehber (  //table oluşturma
+    id INT AUTO_INCREMENT PRIMARY KEY, //id
+    ad VARCHAR(255) NOT NULL, // ad
+    soyad VARCHAR(255) NOT NULL, // soyad
+    telefon VARCHAR(15) NOT NULL // telefon
+);
+```  
+
+**tekrar girişlerde**  
+
+```sql
+mysql -u KULLANICI ADI-p
 ```
