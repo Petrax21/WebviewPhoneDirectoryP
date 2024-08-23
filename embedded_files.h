@@ -22,7 +22,7 @@ const char* index_html = R"(
     user-select: none
 }
 body {
-    background-image: url("backgroundapp.png");
+    background: rgb(244,226,156);
     color: #f4f4f4;
     font-family: 'Garamond', serif;
     overflow: hidden;
@@ -339,6 +339,7 @@ button:active {
     loadContacts();
 });
 </script>
+<script src="path/to/webview.js"></script>
 
 </html>
 
