@@ -1,0 +1,3 @@
+/home/mustafa/Codes/webview-sample-ddd/cmake-build-debug/CMakeFiles/PhoneDirectoryDBP.dir
+/home/mustafa/Codes/webview-sample-ddd/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mustafa/Codes/webview-sample-ddd/cmake-build-debug/CMakeFiles/rebuild_cache.dir

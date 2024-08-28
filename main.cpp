@@ -6,11 +6,11 @@
 #include "service.hpp"
 
 int main() {
-    ApplicationService::connectToDatabase();
 
     webview::webview w(true, nullptr);
+
     w.set_title("Telefon Rehberi");
-    w.set_size(800, 600, WEBVIEW_HINT_NONE);
+    w.set_size(800, 900, WEBVIEW_HINT_NONE);
     w.set_html(index_html);
 
     w.bind("add_contact", [](const std::string& seq, const std::string& req, void*) {

@@ -6,9 +6,6 @@
     "name" : "gtk",
     "version>=" : "4.10.5#2"
   }, {
-    "name" : "webview2",
-    "version>=" : "1.0.2277.86"
-  }, {
     "name" : "zserge-webview",
     "version>=" : "2023-04-15"
   }, {
