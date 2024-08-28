@@ -34,6 +34,7 @@ else()
 
     # Find PostgreSQL package
     find_package(PostgreSQL REQUIRED)
+    find_package(nlohmann-json REQUIRED)
 
     # Include directories
     include_directories(${GTK_INCLUDE_DIRS}
@@ -41,6 +42,7 @@ else()
             ${PostgreSQL_INCLUDE_DIRS}
             ${CMAKE_SOURCE_DIR}/libs/webview
             ${CMAKE_SOURCE_DIR}/json/include
+            ${CMAKE_SOURCE_DIR}/json/include/nlohmann
             ${CMAKE_SOURCE_DIR}/domain/contact
             ${CMAKE_SOURCE_DIR}/application)  # Include path for nlohmann/json
 
@@ -50,6 +52,7 @@ else()
             domain/contact/contact-factory.hpp
             domain/contact/contact-repository.hpp
             domain/contact/contact-service.hpp
+            json/include/nlohmann/json.hpp
             application/service.hpp
     )
 

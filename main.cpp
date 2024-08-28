@@ -13,7 +13,6 @@ int main() {
     w.set_size(800, 600, WEBVIEW_HINT_NONE);
     w.set_html(index_html);
 
-    // Webview'e C++ işlevlerini bağlama
     w.bind("add_contact", [](const std::string& seq, const std::string& req, void*) {
         ApplicationService::addContact(req);
         return "";
