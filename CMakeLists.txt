@@ -51,9 +51,6 @@ else()
             domain/contact/contact-repository.hpp
             domain/contact/contact-service.hpp
             application/service.hpp
-            domain/contact/contact-repository.cpp
-            application/service.cpp
-            domain/contact/contact-factory.cpp
     )
 
     # Link libraries
