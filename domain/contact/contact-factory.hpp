@@ -8,6 +8,7 @@ using json = nlohmann::json;
 
 namespace ContactFactory
 {
+    // Kişi listesini JSON formatına çevirme
     inline json generateGetContactList(const pqxx::result& res) {
         json jArray = json::array();
         for (auto row : res) {
@@ -17,7 +18,7 @@ namespace ContactFactory
             jObject["telefon"] = row[2].c_str();
             jArray.push_back(jObject);
         }
-        return jArray.dump();
+        return jArray;
     }
 }
 

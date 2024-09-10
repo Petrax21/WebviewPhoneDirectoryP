@@ -1,9 +1,21 @@
 /snap/clion/292/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=/home/mustafa/.vcpkg-clion/vcpkg/scripts/buildsystems/vcpkg.cmake -G "Unix Makefiles" -S /home/mustafa/Codes/webview-sample-ddd -B /home/mustafa/Codes/webview-sample-ddd/cmake-build-debug
 -- Running vcpkg install
+waiting to take filesystem lock on /home/mustafa/.vcpkg-clion/vcpkg/.vcpkg-root...
 Detecting compiler hash for triplet x64-linux...
 Compiler found: /usr/bin/c++
 All requested packages are currently installed.
-Total install time: 525 ns
+Total install time: 452 ns
+crow provides CMake targets:
+
+  # this is heuristically generated, and may not be correct
+  find_package(Crow CONFIG REQUIRED)
+  target_link_libraries(main PRIVATE Crow::Crow asio::asio)
+
+curl is compatible with built-in CMake targets:
+
+    find_package(CURL REQUIRED)
+    target_link_libraries(main PRIVATE CURL::libcurl)
+
 gtk provides pkg-config modules:
 
   # GTK Unix print support
@@ -45,6 +57,7 @@ zserge-webview is header-only and can be used from CMake via:
   target_include_directories(main PRIVATE ${ZSERGE_WEBVIEW_INCLUDE_DIRS})
 
 -- Running vcpkg install - done
--- Configuring done (1.6s)
+-- Found OpenSSL: /home/mustafa/Codes/webview-sample-ddd/cmake-build-debug/vcpkg_installed/x64-linux/debug/lib/libcrypto.a (found suitable version "3.3.1", minimum required is "3")
+-- Configuring done (3.0s)
 -- Generating done (0.0s)
 -- Build files have been written to: /home/mustafa/Codes/webview-sample-ddd/cmake-build-debug

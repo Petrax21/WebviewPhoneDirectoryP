@@ -13,16 +13,19 @@ int main() {
     w.set_size(800, 900, WEBVIEW_HINT_NONE);
     w.set_html(index_html);
 
+    // Kişi ekleme fonksiyonu bağlandı
     w.bind("add_contact", [](const std::string& seq, const std::string& req, void*) {
         ApplicationService::addContact(req);
         return "";
     }, nullptr);
 
+    // Kişi silme fonksiyonu bağlandı
     w.bind("delete_contact", [](const std::string& seq, const std::string& req, void*) {
         ApplicationService::deleteContact(req);
         return "";
     }, nullptr);
 
+    // Kişi listesini alma fonksiyonu bağlandı
     w.bind("get_contacts", [](const std::string& seq, const std::string& req, void*) {
         return ApplicationService::getContactList();
     }, nullptr);

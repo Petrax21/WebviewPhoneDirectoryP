@@ -14,5 +14,11 @@
   }, {
     "name" : "nlohmann-json",
     "version>=" : "3.11.3#1"
+  }, {
+    "name" : "crow",
+    "version>=" : "1.2.0"
+  }, {
+    "name" : "curl",
+    "version>=" : "8.9.1#1"
   } ]
 }

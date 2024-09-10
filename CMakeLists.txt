@@ -13,9 +13,12 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(GTK REQUIRED gtk+-3.0)
 pkg_check_modules(WEBKIT REQUIRED webkit2gtk-4.0)
 
-find_package(PostgreSQL REQUIRED)
 find_package(libpqxx REQUIRED)
 find_package(nlohmann_json REQUIRED)
+find_package(Crow REQUIRED)
+find_package(CURL REQUIRED)
+
+add_subdirectory(RabbitMQ)
 
 include_directories(${GTK_INCLUDE_DIRS}
         ${WEBKIT_INCLUDE_DIRS}
@@ -38,6 +41,8 @@ add_executable(${PROJECT_NAME} main.cpp embedded_files.h
 target_link_libraries(${PROJECT_NAME} ${GTK_LIBRARIES}
         ${WEBKIT_LIBRARIES}
         ${PostgreSQL_LIBRARIES}
+        curl-demo ${CURL_LIBRARIES}
         nlohmann_json::nlohmann_json
         libpqxx::pqxx
+        Crow::Crow
 )
