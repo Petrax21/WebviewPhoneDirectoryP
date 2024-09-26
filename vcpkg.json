@@ -20,5 +20,11 @@
   }, {
     "name" : "curl",
     "version>=" : "8.9.1#1"
+  }, {
+    "name" : "amqpcpp",
+    "version>=" : "4.3.26"
+  }, {
+    "name" : "librabbitmq",
+    "version>=" : "0.14.0"
   } ]
 }

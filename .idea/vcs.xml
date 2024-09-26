@@ -2,7 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/RabbitMQ/rabbitmq-c" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libcpp-http-client" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/vcpkg" vcs="Git" />
   </component>
 </project>
